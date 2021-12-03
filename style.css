@@ -1,0 +1,92 @@
+html{
+	margin:  -1px;
+	padding: -1px;
+
+}
+body{
+	margin: -1px;
+	padding: -1px;
+	background-image: url("../Ressources/BG.jpg");
+	background-attachment:fixed;
+	
+}
+
+header{
+	background-image: url("../Ressources/header.jpg");
+	margin: 0;
+	padding: 30px 30px 0px 30px;
+	height: 10%;
+
+}
+
+h1{
+	font-size: 45px;
+	color:  white;
+	text-align: center;
+}
+
+h2{
+	border-bottom-right-radius: 15px ;
+	border-bottom-left-radius: 20px ;
+	font-size: 38px;
+	font-family: monospace;
+	color: #80aaff;
+	text-align: center;
+}
+
+.demande{
+	background-color: rgba(0, 128, 128,0.5);
+	color: white;
+	border-radius: 20px;
+	margin: 50px 25% 50px 25%;
+	padding-bottom: 20px;
+}
+
+.recherche{
+	margin: 50px ;
+	background-color:rgba(0, 77, 77,0.5);
+	border-radius: 20px;
+	margin: 50px 25% 50px 25%;
+	padding-bottom: 20px;
+}
+
+.titre{
+	text-align: center;
+}
+
+.description{
+	padding-left: 11px;
+	padding-right: 11px;
+}
+
+.formulaireRecherche{
+	color: black;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-left: 20%;
+	padding-right: 20%;
+	
+	
+}
+
+#main{
+	text-align: center;
+	
+}
+
+#etiquette{
+	width: 40px;
+}
+
+.formulaireDemande{
+	color: black;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+#etiquette{
+	display: inline-block;
+	width: 30px;
+	float: left;
+}
