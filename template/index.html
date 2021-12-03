@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Les sauveteurs de du dunkerkois</title>
+        <meta name="name" content="Hugo Brajdic">
+        <link rel="stylesheet" type="text/css" href="https://localhost:5000/style/style.css">
+        <script type="text/javascript">
+            function setNom()
+            {
+                var nomCherche = document.getElementById("nomCherche").value;
+                var prenomCherche = document.getElementById("prenomCherche").value;
+                return true;
+            }
+        </script>
+    </head>
+
+    <body onload="initElement();">
+       <header>
+            <h1>Les Sauveteurs du dunkerquois</h1>
+            <h2>270 années d'Histoire</h2>
+            <p><a href="index.html"> <img src="../Ressources/francais.png" alt="francais" style="width:30px;height:30px;"></a>--<a href="indexEN.html"><img src="../Ressources/anglais.png" alt="anglais" style="width:30px;height:30px;"></a></p>
+
+        </header>
+        <div class='recherche'>
+            <div class='titre'>
+                    <h1>Rechercher un sauveteur</h1>
+                </div>
+            <div class='formulaireRecherche'>
+                    <form action="http://localhost:5000/resultat" method="post">
+					<label>Nom</label> : <input type="text" name="nom" />
+					<label>Prénom</label> : <input type="text" name="prénom" />
+					<input type="submit" value="Envoyer" />
+			</form>
+                </div>
+        </div>
+        <div class='demande'>
+                <div class='titre'>
+                    <h1>Effectuer une demande</h1>
+                </div>
+                <div class='description'>
+                    <p style="text-align: center; font-size: 24px;">Si vous avez une demande d'ajout d'informations, merci de remplir ce formulaire pour l'effectuer</p>
+                </div>
+                <div class='formulaireDemande'>
+                    <form action="traitement.php">
+                        <fieldset id="main">
+                            <p><label id="etiquette" for="nom">Nom</label></p>
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom"></p>
+
+                            <p><label id="etiquette" for="nom">Prénom</label>
+                            <input type="text" name="prénom" id="nom" placeholder="Votre prénom"></p>
+
+                            <p><label id="etiquette" for="nom">Age</label>
+                            <input type="text" name="age" id="nom" placeholder="Votre âge"></p>
+
+                            <p><label id="etiquette" for="nom">Email</label>
+                            <input type="email" name="mail" id="nom" placeholder="Votre adresse email"></p>
+
+                            <p><label id="etiquette" for="nom">Téléphone</label>
+                            <input type="tel" name="telephone" id="nom" placeholder="Votre numéro de téléphone"></p>
+
+                            <p><label id="etiquette" for="nom">Date du sauvetage</label>
+                            <input type="date" name="date" id="nom" placeholder="Date du sauvetage "></p><br>
+
+                            <p><label id="etiquette" for="nom">Justificatifs</label>
+                            <input type="file" name="justificatifs" id="nom" placeholder="Pièces justificatives"></p>
+
+                            <p><button type="submit" role="button" aria disabled="false">Envoyer</button></p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+    </body>
+
+
+
+
+</html>
+

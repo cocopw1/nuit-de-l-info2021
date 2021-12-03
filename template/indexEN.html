@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Lifeguards of the dunkerkois </title>
+        <meta name="name" content="Hugo Brajdic">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            function setNom()
+            {
+                var nomCherche = document.getElementById("nomCherche").value;
+                var prenomCherche = document.getElementById("prenomCherche").value;
+                return true;
+            }
+        </script>
+    </head>
+
+    <body onload="initElement();">
+       <header>
+            <h1>The Lifeguards of the dunkerkois</h1>
+            <h2>270 years of History</h2>
+            <p><a href="index.html"> <img src="../Ressources/francais.png" alt="francais" style="width:30px;height:30px;"></a>--<a href="indexEN.html"><img src="../Ressources/anglais.png" alt="anglais" style="width:30px;height:30px;"></a></p>
+
+        </header>
+        <div class='recherche'>
+            <div class='titre'>
+                    <h1>Search a lifeguard</h1>
+                </div>
+            <div class='formulaireRecherche'>
+                    <form action="recherche.php" method="post">
+                        <fieldset id="main">
+                            <p><label id="etiquette" for="nom">His/her first name</label>
+                            <input type="text" name="nom" id="nomCherche" placeholder="Votre nom"></p>
+
+                            <p><label id="etiquette" for="nom">His/her last name</label>
+                            <input type="text" name="prénom" id="prenomCherche" placeholder="Votre prénom"></p>
+
+                            <p><button id="chercher" type="submit" role="button" onclick="return showNom();">Search</button></p>
+                        </fieldset>
+
+                    </form>
+                </div>
+        </div>
+        <div class='demande'>
+                <div class='titre'>
+                    <h1>Make a request</h1>
+                </div>
+                <div class='description'>
+                    <p style="text-align: center; font-size: 24px;">If you have a request of informations add, please fill out this form to do so</p>
+                </div>
+                <div class='formulaireDemande'>
+                    <form action="traitement.php">
+                        <fieldset id="main">
+                            <p><label id="etiquette" for="nom">First Name</label></p>
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom"></p>
+
+                            <p><label id="etiquette" for="nom">Last Name</label>
+                            <input type="text" name="prénom" id="nom" placeholder="Votre prénom"></p>
+
+                            <p><label id="etiquette" for="nom">Age</label>
+                            <input type="text" name="age" id="nom" placeholder="Votre âge"></p>
+
+                            <p><label id="etiquette" for="nom">Email</label>
+                            <input type="email" name="mail" id="nom" placeholder="Votre adresse email"></p>
+
+                            <p><label id="etiquette" for="nom">N°Phone</label>
+                            <input type="tel" name="telephone" id="nom" placeholder="Votre numéro de téléphone"></p>
+
+                            <p><label id="etiquette" for="nom">Rescue Date</label>
+                            <input type="date" name="date" id="nom" placeholder="Date du sauvetage "></p><br>
+
+                            <p><label id="etiquette" for="nom">Supporting documents</label>
+                            <input type="file" name="justificatifs" id="nom" placeholder="Pièces justificatives"></p>
+
+                            <p><button type="submit" role="button" aria disabled="false">Send</button></p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+    </body>
+
+
+
+
+</html>
+
